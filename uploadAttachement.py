@@ -2,7 +2,7 @@
 import requests
 from shareplum import Office365
 
-# Obtain auth cookie
+# Authenticate to Office365 Sharepoint
 authcookie = Office365('https://YOUR-NAME.sharepoint.com', username='YOUR-USERNAME',password='YOUR-PASSWORD').GetCookies()
 session = requests.Session()
 session.cookies = authcookie
